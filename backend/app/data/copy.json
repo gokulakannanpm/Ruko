@@ -1,0 +1,288 @@
+{
+  "indicators": {
+    "assured_return": {
+      "label": { "en": "Assured or guaranteed return claim", "ta": "உறுதியான அல்லது உத்தரவாத வருமானக் கூற்று" },
+      "why_it_matters": {
+        "en": "Guaranteed or unusually certain returns are a strong warning indicator in investment fraud awareness guidance.",
+        "ta": "உத்தரவாதமான அல்லது அசாதாரணமாக உறுதியான வருமானம் என்பது முதலீட்டு மோசடி விழிப்புணர்வு வழிகாட்டுதல்களில் வலுவான எச்சரிக்கை அறிகுறியாகக் கருதப்படுகிறது."
+      },
+      "verify_through": {
+        "text": { "en": "Official investor-awareness guidance from SEBI.", "ta": "செபியின் அதிகாரப்பூர்வ முதலீட்டாளர் விழிப்புணர்வு வழிகாட்டுதல்." },
+        "route_ids": ["sebi_investor_awareness"]
+      },
+      "limit": { "en": "This does not by itself prove the sender is acting fraudulently.", "ta": "இது மட்டுமே அனுப்புநர் மோசடியாகச் செயல்படுகிறார் என்பதை நிரூபிக்காது." },
+      "verifiable_by": "official_source_by_user",
+      "source_basis": "general_awareness"
+    },
+    "specific_call": {
+      "label": { "en": "Specific buy or sell call from the sender", "ta": "அனுப்புநரின் குறிப்பிட்ட வாங்க அல்லது விற்க அழைப்பு" },
+      "why_it_matters": {
+        "en": "In India, advice on specific securities is generally regulated by SEBI and is expected to come from registered persons. Ruko does not judge whether any such call is right.",
+        "ta": "இந்தியாவில் குறிப்பிட்ட பங்குகள் பற்றிய ஆலோசனை பொதுவாக செபியால் ஒழுங்குபடுத்தப்படுகிறது; அது பதிவு பெற்றவர்களிடமிருந்து வர வேண்டும் என்று எதிர்பார்க்கப்படுகிறது. அத்தகைய அழைப்பு சரியானதா என்பதை ருகோ மதிப்பிடாது."
+      },
+      "verify_through": {
+        "text": { "en": "SEBI's intermediary records, to see whether the sender is registered as an adviser or research analyst.", "ta": "அனுப்புநர் ஆலோசகராக அல்லது ஆய்வாளராகப் பதிவு பெற்றவரா என்று செபியின் இடைத்தரகர் பதிவுகளில் பாருங்கள்." },
+        "route_ids": ["sebi_intermediary_search", "sebi_investor_awareness"]
+      },
+      "limit": { "en": "A registered person can also give such calls. Registration does not say whether a call is good.", "ta": "பதிவு பெற்றவரும் இத்தகைய அழைப்புகளை வழங்கலாம். ஒரு அழைப்பு நல்லதா என்பதைப் பதிவு சொல்லாது." },
+      "verifiable_by": "official_source_by_user",
+      "source_basis": "regulator_guidance"
+    },
+    "registration_claim": {
+      "label": { "en": "Registration claim", "ta": "பதிவுக் கூற்று" },
+      "why_it_matters": {
+        "en": "A registration number shown in a message does not by itself establish that the sender owns or is authorized to use it.",
+        "ta": "செய்தியில் காட்டப்படும் பதிவு எண், அதை அனுப்புநர் வைத்திருக்கிறார் அல்லது பயன்படுத்த அதிகாரம் பெற்றவர் என்பதை மட்டும் நிரூபிக்காது."
+      },
+      "verify_through": {
+        "text": { "en": "Official SEBI intermediary and registration records.", "ta": "செபியின் அதிகாரப்பூர்வ இடைத்தரகர் மற்றும் பதிவுப் பதிவுகள்." },
+        "route_ids": ["sebi_intermediary_search"]
+      },
+      "limit": { "en": "Ruko cannot establish identity or ownership of the registration number from the message alone.", "ta": "செய்தியை மட்டும் வைத்து பதிவு எண்ணின் உரிமையையோ அனுப்புநரின் அடையாளத்தையோ ருகோவால் உறுதிப்படுத்த முடியாது." },
+      "verifiable_by": "official_source_by_user",
+      "source_basis": "regulator_guidance"
+    },
+    "payee_handle": {
+      "label": { "en": "Payment handle requested", "ta": "பணம் செலுத்த கோரப்பட்ட ஐடி" },
+      "why_it_matters": {
+        "en": "SEBI has introduced validated UPI handles for registered intermediaries who collect money from investors. This handle does not follow that format. Investors can also pay by bank transfer, so this alone is not proof either way.",
+        "ta": "முதலீட்டாளர்களிடம் பணம் பெறும் பதிவு பெற்ற இடைத்தரகர்களுக்காக செபி சரிபார்க்கப்பட்ட UPI ஐடிகளை அறிமுகப்படுத்தியுள்ளது. இந்த ஐடி அந்த வடிவில் இல்லை. முதலீட்டாளர்கள் வங்கிப் பரிமாற்றம் மூலமும் செலுத்தலாம்; எனவே இது மட்டும் எதையும் நிரூபிக்காது."
+      },
+      "verify_through": {
+        "text": { "en": "SEBI Check, using the UPI ID or the bank account and IFSC.", "ta": "செபி செக், UPI ஐடி அல்லது வங்கிக் கணக்கு மற்றும் IFSC-ஐப் பயன்படுத்தி." },
+        "route_ids": ["sebi_check"]
+      },
+      "limit": { "en": "Ruko cannot tell who controls this account. It only compares the handle's format.", "ta": "இந்தக் கணக்கை யார் இயக்குகிறார் என்பதை ருகோவால் சொல்ல முடியாது. அது ஐடியின் வடிவத்தை மட்டுமே ஒப்பிடுகிறது." },
+      "verifiable_by": "official_source_by_user",
+      "source_basis": "regulator_guidance"
+    },
+    "payee_handle_valid_format": {
+      "label": { "en": "Validated-format payment handle", "ta": "சரிபார்க்கப்பட்ட வடிவ ஐடி" },
+      "why_it_matters": {
+        "en": "This handle has the shape of a SEBI validated handle. A matching shape is not a check that it is genuine.",
+        "ta": "இந்த ஐடி செபி சரிபார்க்கப்பட்ட ஐடியின் வடிவில் உள்ளது. வடிவம் பொருந்துவது அது உண்மையானது என்ற சோதனை அல்ல."
+      },
+      "verify_through": {
+        "text": { "en": "SEBI Check, using the UPI ID or the bank account and IFSC.", "ta": "செபி செக், UPI ஐடி அல்லது வங்கிக் கணக்கு மற்றும் IFSC-ஐப் பயன்படுத்தி." },
+        "route_ids": ["sebi_check"]
+      },
+      "limit": { "en": "Ruko only checks the format. Use SEBI Check to see whether it belongs to a registered intermediary.", "ta": "ருகோ வடிவத்தை மட்டுமே பார்க்கிறது. அது பதிவு பெற்ற இடைத்தரகருக்குச் சொந்தமானதா என்று செபி செக்கில் பாருங்கள்." },
+      "verifiable_by": "format_check_only",
+      "source_basis": "regulator_guidance"
+    },
+    "upfront_or_withdrawal_fee": {
+      "label": { "en": "Fee or tax requested up front or before withdrawal", "ta": "முன்கூட்டியே அல்லது பணம் எடுக்கும் முன் கேட்கப்படும் கட்டணம் அல்லது வரி" },
+      "why_it_matters": {
+        "en": "Being asked to pay a fee or tax before you can join or withdraw returns is a pattern reported in investment frauds.",
+        "ta": "சேர்வதற்கு முன்போ வருமானத்தை எடுப்பதற்கு முன்போ கட்டணம் அல்லது வரி செலுத்தச் சொல்வது முதலீட்டு மோசடிகளில் பதிவாகியுள்ள ஒரு முறை."
+      },
+      "verify_through": {
+        "text": { "en": "Your bank or a registered intermediary's official helpline, and official investor-awareness guidance.", "ta": "உங்கள் வங்கி அல்லது பதிவு பெற்ற இடைத்தரகரின் அதிகாரப்பூர்வ உதவி எண், மற்றும் அதிகாரப்பூர்வ முதலீட்டாளர் விழிப்புணர்வு வழிகாட்டுதல்." },
+        "route_ids": ["sebi_investor_awareness"]
+      },
+      "limit": { "en": "Some genuine services charge fees. Ruko cannot tell whether this fee is genuine.", "ta": "சில உண்மையான சேவைகளும் கட்டணம் வசூலிக்கின்றன. இந்தக் கட்டணம் உண்மையானதா என்பதை ருகோவால் சொல்ல முடியாது." },
+      "verifiable_by": "official_source_by_user",
+      "source_basis": "reported_pattern"
+    },
+    "private_group_access": {
+      "label": { "en": "Private group or special-access offer", "ta": "தனிக் குழு அல்லது சிறப்பு அணுகல் வாய்ப்பு" },
+      "why_it_matters": {
+        "en": "SEBI has warned about invitations to groups with names such as VIP or free trading courses, where people pose as experts or registered intermediaries.",
+        "ta": "VIP அல்லது இலவசப் பங்குச்சந்தைப் பயிற்சி போன்ற பெயர்களில் உள்ள குழுக்களுக்கான அழைப்புகள் பற்றி செபி எச்சரித்துள்ளது; அங்கு சிலர் நிபுணர்களாக அல்லது பதிவு பெற்ற இடைத்தரகர்களாக நடிக்கிறார்கள்."
+      },
+      "verify_through": {
+        "text": { "en": "SEBI's investor-awareness notices and its intermediary records.", "ta": "செபியின் முதலீட்டாளர் விழிப்புணர்வு அறிவிப்புகள் மற்றும் இடைத்தரகர் பதிவுகள்." },
+        "route_ids": ["sebi_investor_awareness", "sebi_intermediary_search"]
+      },
+      "limit": { "en": "Many groups use these words. Ruko cannot tell what this particular group is.", "ta": "பல குழுக்கள் இந்தச் சொற்களைப் பயன்படுத்துகின்றன. இந்தக் குறிப்பிட்ட குழு என்ன என்பதை ருகோவால் சொல்ல முடியாது." },
+      "verifiable_by": "official_source_by_user",
+      "source_basis": "regulator_guidance"
+    },
+    "urgency": {
+      "label": { "en": "Pressure to act quickly", "ta": "விரைவாகச் செயல்பட அழுத்தம்" },
+      "why_it_matters": {
+        "en": "Short deadlines leave less time to check, which is why they are treated as a warning indicator.",
+        "ta": "குறுகிய கால அவகாசம் சரிபார்க்கும் நேரத்தைக் குறைக்கிறது; அதனால் இது எச்சரிக்கை அறிகுறியாகக் கருதப்படுகிறது."
+      },
+      "verify_through": {
+        "text": { "en": "Take the time to use the official routes below.", "ta": "கீழே உள்ள அதிகாரப்பூர்வ வழிகளைப் பயன்படுத்த நேரம் எடுத்துக்கொள்ளுங்கள்." },
+        "route_ids": []
+      },
+      "limit": { "en": "Deadlines are also used in genuine offers. This does not prove anything about the sender.", "ta": "உண்மையான சலுகைகளிலும் காலக்கெடு உண்டு. இது அனுப்புநரைப் பற்றி எதையும் நிரூபிக்காது." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    },
+    "secrecy_pressure": {
+      "label": { "en": "Request to keep it secret", "ta": "ரகசியமாக வைக்கச் சொல்லும் கோரிக்கை" },
+      "why_it_matters": {
+        "en": "Asking you not to tell family or others stops you from getting a second opinion, which is why it is treated as a strong indicator.",
+        "ta": "குடும்பத்தினரிடமோ மற்றவர்களிடமோ சொல்ல வேண்டாம் என்பது இரண்டாவது கருத்தைப் பெறுவதைத் தடுக்கிறது; அதனால் இது வலுவான அறிகுறியாகக் கருதப்படுகிறது."
+      },
+      "verify_through": {
+        "text": { "en": "Someone you trust, such as a family member or a bank branch officer.", "ta": "குடும்ப உறுப்பினர் அல்லது வங்கிக் கிளை அதிகாரி போன்ற நம்பகமான ஒருவர்." },
+        "route_ids": []
+      },
+      "limit": { "en": "Ruko cannot tell why the sender asked for secrecy.", "ta": "அனுப்புநர் ஏன் ரகசியம் கேட்டார் என்பதை ருகோவால் சொல்ல முடியாது." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    },
+    "risky_link": {
+      "label": { "en": "Link that needs care", "ta": "கவனம் தேவைப்படும் இணைப்பு" },
+      "why_it_matters": {
+        "en": "Links and app files are a common way to move people to unofficial trading screens. Ruko has not opened this link.",
+        "ta": "இணைப்புகளும் செயலி கோப்புகளும் மக்களை அதிகாரப்பூர்வமற்ற வர்த்தகத் திரைகளுக்குக் கொண்டு செல்லும் பொதுவான வழி. ருகோ இந்த இணைப்பைத் திறக்கவில்லை."
+      },
+      "verify_through": {
+        "text": { "en": "Install apps only from official app stores and open official sites by typing their addresses yourself. Suspicious links can be reported on the national cyber crime portal.", "ta": "செயலிகளை அதிகாரப்பூர்வ செயலி அங்காடிகளிலிருந்து மட்டுமே நிறுவவும்; அதிகாரப்பூர்வ தளங்களை முகவரியை நீங்களே தட்டச்சு செய்து திறக்கவும். சந்தேகத்திற்குரிய இணைப்புகளை தேசிய இணையக் குற்றப் புகார் தளத்தில் புகாரளிக்கலாம்." },
+        "route_ids": ["ncrp_portal"]
+      },
+      "limit": { "en": "Ruko cannot tell what is behind the link and never opens it.", "ta": "இணைப்பின் பின்னால் என்ன உள்ளது என்பதை ருகோவால் சொல்ல முடியாது; அது இணைப்புகளைத் திறப்பதில்லை." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    },
+    "proof_screenshots": {
+      "label": { "en": "Profit screenshots or testimonials offered as proof", "ta": "ஆதாரமாக வழங்கப்படும் லாப ஸ்கிரீன்ஷாட்கள் அல்லது சான்றுகள்" },
+      "why_it_matters": {
+        "en": "Screenshots and testimonials can be edited or selected, so they do not show real results.",
+        "ta": "ஸ்கிரீன்ஷாட்கள் மற்றும் சான்றுகள் திருத்தப்படலாம் அல்லது தேர்ந்தெடுக்கப்படலாம்; எனவே அவை உண்மையான முடிவுகளைக் காட்டாது."
+      },
+      "verify_through": {
+        "text": { "en": "Official records, not screenshots.", "ta": "ஸ்கிரீன்ஷாட்கள் அல்ல, அதிகாரப்பூர்வ பதிவுகள்." },
+        "route_ids": []
+      },
+      "limit": { "en": "Ruko cannot tell whether a particular screenshot is genuine.", "ta": "ஒரு குறிப்பிட்ட ஸ்கிரீன்ஷாட் உண்மையானதா என்பதை ருகோவால் சொல்ல முடியாது." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    },
+    "ai_instruction_text": {
+      "label": { "en": "Text that seems to address an AI system", "ta": "AI அமைப்பிடம் பேசுவது போன்ற உரை" },
+      "why_it_matters": {
+        "en": "Part of this text looks like an instruction to an AI tool. Ruko treated all message text as plain content and ignored such instructions.",
+        "ta": "இந்த உரையின் ஒரு பகுதி AI கருவிக்கான கட்டளை போலத் தெரிகிறது. செய்தியின் அனைத்து உரையையும் ருகோ சாதாரண உள்ளடக்கமாகவே கருதி, அத்தகைய கட்டளைகளைப் புறக்கணித்தது."
+      },
+      "verify_through": {
+        "text": { "en": "Nothing to verify here. It is a sign the text may have been written to influence tools.", "ta": "இதில் சரிபார்க்க எதுவும் இல்லை. கருவிகளை பாதிக்கும் நோக்கில் உரை எழுதப்பட்டிருக்கலாம் என்பதற்கான அடையாளம் இது." },
+        "route_ids": []
+      },
+      "limit": { "en": "Ruko cannot tell who wrote this or why.", "ta": "இதை யார் எழுதினார், ஏன் என்பதை ருகோவால் சொல்ல முடியாது." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    },
+    "sensitive_request": {
+      "label": { "en": "Request for OTP, PIN, password or remote access", "ta": "ஓடிபி, பின், கடவுச்சொல் அல்லது தொலைநிலை அணுகல் கோரிக்கை" },
+      "why_it_matters": {
+        "en": "Sharing an OTP, PIN, password or screen access can give someone control of your accounts. Banks regularly warn customers never to share these.",
+        "ta": "ஓடிபி, பின், கடவுச்சொல் அல்லது திரை அணுகலைப் பகிர்வது உங்கள் கணக்குகளின் கட்டுப்பாட்டை மற்றவருக்குக் கொடுக்கக்கூடும். வங்கிகள் இவற்றை யாருடனும் பகிரக்கூடாது என்று தொடர்ந்து எச்சரிக்கின்றன."
+      },
+      "verify_through": {
+        "text": { "en": "The official number printed on your card or passbook, or your bank branch.", "ta": "உங்கள் அட்டை அல்லது பாஸ்புக்கில் அச்சிடப்பட்ட அதிகாரப்பூர்வ எண், அல்லது உங்கள் வங்கிக் கிளை." },
+        "route_ids": []
+      },
+      "limit": { "en": "Ruko cannot tell who is asking. Ruko itself never asks for these.", "ta": "யார் கேட்கிறார் என்பதை ருகோவால் சொல்ல முடியாது. ருகோ இவற்றை ஒருபோதும் கேட்காது." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    },
+    "ai_noticed": {
+      "label": { "en": "Claim noticed by AI", "ta": "AI கவனித்த கூற்று" },
+      "why_it_matters": {
+        "en": "Ruko's rules did not specifically classify this part of the message. An AI model marked it as a claim that may be worth checking. It did not change the result above.",
+        "ta": "ருகோவின் விதிகள் செய்தியின் இந்தப் பகுதியை குறிப்பாக வகைப்படுத்தவில்லை. இது சரிபார்க்கத் தக்க கூற்றாக இருக்கலாம் என்று ஒரு AI மாதிரி குறித்தது. மேலே உள்ள முடிவை இது மாற்றவில்லை."
+      },
+      "verify_through": {
+        "text": { "en": "The official sources listed above, or someone you trust.", "ta": "மேலே உள்ள அதிகாரப்பூர்வ ஆதாரங்கள், அல்லது நம்பகமான ஒருவர்." },
+        "route_ids": []
+      },
+      "limit": { "en": "AI can misread messages. Treat this as a prompt to check, not as a finding.", "ta": "AI செய்திகளைத் தவறாகப் படிக்கலாம். இதை ஒரு கண்டுபிடிப்பாக அல்ல, சரிபார்ப்பதற்கான நினைவூட்டலாகக் கருதுங்கள்." },
+      "verifiable_by": "not_verifiable_from_message",
+      "source_basis": "general_awareness"
+    }
+  },
+  "link_details": {
+    "apk": { "en": "The link points to an app file (.apk), which installs software from outside an app store.", "ta": "இணைப்பு ஒரு செயலி கோப்பை (.apk) சுட்டுகிறது; இது செயலி அங்காடிக்கு வெளியே இருந்து மென்பொருளை நிறுவும்." },
+    "shortener": { "en": "The link is shortened, so the real destination is hidden.", "ta": "இணைப்பு சுருக்கப்பட்டுள்ளது; எனவே உண்மையான இலக்கு மறைந்துள்ளது." },
+    "lookalike": { "en": "The link contains the name of an official body but is not that body's website.", "ta": "இணைப்பில் அதிகாரப்பூர்வ அமைப்பின் பெயர் உள்ளது, ஆனால் அது அந்த அமைப்பின் இணையதளம் அல்ல." },
+    "ip_literal": { "en": "The link uses a number instead of a name.", "ta": "இணைப்பு பெயருக்குப் பதிலாக எண்ணைப் பயன்படுத்துகிறது." },
+    "punycode": { "en": "The link uses disguised characters.", "ta": "இணைப்பு மாறுவேட எழுத்துகளைப் பயன்படுத்துகிறது." },
+    "http_only": { "en": "The link does not use a secure connection.", "ta": "இணைப்பு பாதுகாப்பான இணைப்பைப் பயன்படுத்தவில்லை." }
+  },
+  "tiers": {
+    "several_indicators": { "en": "Several risk indicators found", "ta": "பல ஆபத்து அறிகுறிகள் கண்டறியப்பட்டன" },
+    "some_indicators": { "en": "Some risk indicators found", "ta": "சில ஆபத்து அறிகுறிகள் கண்டறியப்பட்டன" },
+    "none_found": { "en": "No rule-based indicators found. This is not a safety check.", "ta": "விதிகள் அடிப்படையில் எந்த ஆபத்து அறிகுறியும் கண்டறியப்படவில்லை. இது பாதுகாப்புச் சோதனை அல்ல." }
+  },
+  "summaries": {
+    "several": {
+      "en": "Ruko found several risk indicators in this message. Each one is a claim that needs checking through an official route before any money is sent. Ruko cannot tell whether the sender is genuine.",
+      "ta": "இந்தச் செய்தியில் ருகோ பல ஆபத்து அறிகுறிகளைக் கண்டறிந்தது. பணம் அனுப்பும் முன் ஒவ்வொன்றும் அதிகாரப்பூர்வ வழியில் சரிபார்க்கப்பட வேண்டிய கூற்று. அனுப்புநர் உண்மையானவரா என்பதை ருகோவால் சொல்ல முடியாது."
+    },
+    "some": {
+      "en": "Ruko found some risk indicators in this message. They are claims worth checking through an official route before money is sent. Ruko cannot tell whether the sender is genuine.",
+      "ta": "இந்தச் செய்தியில் ருகோ சில ஆபத்து அறிகுறிகளைக் கண்டறிந்தது. பணம் அனுப்பும் முன் அவற்றை அதிகாரப்பூர்வ வழியில் சரிபார்க்கத் தகும். அனுப்புநர் உண்மையானவரா என்பதை ருகோவால் சொல்ல முடியாது."
+    },
+    "none": {
+      "en": "Ruko's rules found no risk indicators in this message. That does not mean the message is trustworthy. Ruko cannot verify the sender, accounts or links.",
+      "ta": "ருகோவின் விதிகள் இந்தச் செய்தியில் எந்த ஆபத்து அறிகுறியையும் காணவில்லை. இதன் பொருள் செய்தி நம்பத்தக்கது என்பதல்ல. அனுப்புநர், கணக்குகள் அல்லது இணைப்புகளை ருகோவால் சரிபார்க்க முடியாது."
+    }
+  },
+  "cannot_verify": [
+    { "id": "cv1", "text": { "en": "Whether the person who sent this message is who they say they are.", "ta": "இந்தச் செய்தியை அனுப்பியவர் தாம் கூறுபவர்தானா என்பதை." } },
+    { "id": "cv2", "text": { "en": "Whether a registration number shown in the message belongs to the sender.", "ta": "செய்தியில் உள்ள பதிவு எண் அனுப்புநருக்குச் சொந்தமானதா என்பதை." } },
+    { "id": "cv3", "text": { "en": "Whether a payment account or UPI ID is genuine, or who controls it.", "ta": "ஒரு பணம் செலுத்தும் கணக்கு அல்லது UPI ஐடி உண்மையானதா, அதை யார் இயக்குகிறார் என்பதை." } },
+    { "id": "cv4", "text": { "en": "What a link or app does. Ruko never opens links.", "ta": "ஒரு இணைப்பு அல்லது செயலி என்ன செய்யும் என்பதை. ருகோ இணைப்புகளைத் திறக்காது." } },
+    { "id": "cv5", "text": { "en": "Whether any investment is good or bad, or whether any promised return will happen. Ruko does not give investment advice.", "ta": "எந்த முதலீடும் நல்லதா கெட்டதா, வாக்களிக்கப்பட்ட வருமானம் கிடைக்குமா என்பதை. ருகோ முதலீட்டு ஆலோசனை வழங்காது." } }
+  ],
+  "pause_pact": {
+    "checklist": [
+      { "id": "p1", "text": { "en": "I have not been told to keep this secret from my family.", "ta": "இதை என் குடும்பத்தினரிடம் மறைக்கும்படி எனக்குச் சொல்லப்படவில்லை." } },
+      { "id": "p2", "text": { "en": "I have checked the registration claim and the payment account through an official route.", "ta": "பதிவுக் கூற்றையும் பணம் செலுத்தும் கணக்கையும் அதிகாரப்பூர்வ வழியில் சரிபார்த்தேன்." } },
+      { "id": "p3", "text": { "en": "I can explain, in my own words, what I am paying for and what I will receive.", "ta": "நான் எதற்காகப் பணம் செலுத்துகிறேன், என்ன பெறுவேன் என்பதை என் சொந்த வார்த்தைகளில் விளக்க முடியும்." } },
+      { "id": "p4", "text": { "en": "I have told someone I trust about this message.", "ta": "இந்தச் செய்தியைப் பற்றி நம்பகமான ஒருவரிடம் சொன்னேன்." } }
+    ]
+  },
+  "trusted_person_templates": {
+    "with_claims": {
+      "en": "I received a message asking me to pay money for an investment. A checking tool called Ruko marked these points that need verification: {labels}. I have not paid anything. Can you help me check this before I decide?",
+      "ta": "முதலீட்டிற்காகப் பணம் செலுத்தச் சொல்லி எனக்கு ஒரு செய்தி வந்தது. ருகோ என்ற சரிபார்ப்புக் கருவி இந்தக் குறிப்புகளைச் சரிபார்க்க வேண்டியவை என்று குறித்தது: {labels}. நான் இன்னும் எதுவும் செலுத்தவில்லை. முடிவு செய்வதற்கு முன் இதைச் சரிபார்க்க உதவ முடியுமா?"
+    },
+    "no_claims": {
+      "en": "I received a message about an investment and want to check it before paying. Can you look at it with me?",
+      "ta": "முதலீடு பற்றிய ஒரு செய்தி வந்தது; பணம் செலுத்தும் முன் அதைச் சரிபார்க்க விரும்புகிறேன். என்னுடன் சேர்ந்து பார்க்க முடியுமா?"
+    }
+  },
+  "already_paid_steps": [
+    {
+      "id": "s1",
+      "text": { "en": "Call the cyber fraud helpline 1930 now. Report as soon as you can.", "ta": "இணைய மோசடி உதவி எண் 1930-ஐ உடனே அழைக்கவும். எவ்வளவு விரைவாகப் புகாரளிக்கிறீர்களோ அவ்வளவு நல்லது." },
+      "tel": "tel:1930",
+      "url": null
+    },
+    {
+      "id": "s2",
+      "text": { "en": "Tell your bank or payment app that you sent money because of a suspected fraud.", "ta": "சந்தேகத்திற்குரிய மோசடியால் பணம் அனுப்பியதாக உங்கள் வங்கி அல்லது பணம் செலுத்தும் செயலியிடம் தெரிவிக்கவும்." },
+      "tel": null,
+      "url": null
+    },
+    {
+      "id": "s3",
+      "text": { "en": "After the call you may get an SMS with an acknowledgement number. Use it to submit full details on the National Cyber Crime Reporting Portal, within the time they state.", "ta": "அழைப்பிற்குப் பிறகு ஒப்புகை எண்ணுடன் எஸ்எம்எஸ் வரலாம். அவர்கள் குறிப்பிடும் நேரத்திற்குள் அந்த எண்ணைப் பயன்படுத்தி தேசிய இணையக் குற்றப் புகார் தளத்தில் முழு விவரங்களைச் சமர்ப்பிக்கவும்." },
+      "tel": null,
+      "url": "https://cybercrime.gov.in/"
+    },
+    {
+      "id": "s4",
+      "text": { "en": "Keep screenshots, the transaction reference, the sender's number or ID and the payment details. Do not delete the chat.", "ta": "ஸ்கிரீன்ஷாட்கள், பரிவர்த்தனை குறிப்பு எண், அனுப்புநரின் எண் அல்லது ஐடி, பணம் செலுத்திய விவரங்களை வைத்திருங்கள். உரையாடலை நீக்க வேண்டாம்." },
+      "tel": null,
+      "url": null
+    },
+    {
+      "id": "s5",
+      "text": { "en": "Be careful with anyone who offers to recover your money for a fee.", "ta": "கட்டணம் வாங்கிக்கொண்டு உங்கள் பணத்தை மீட்டுத் தருவதாகக் கூறும் எவரிடமும் எச்சரிக்கையாக இருங்கள்." },
+      "tel": null,
+      "url": null
+    }
+  ],
+  "refusal": {
+    "en": "Ruko does not recommend what to buy, sell or hold, and it cannot predict prices. If someone has sent you an investment message, paste that message here and Ruko will show which claims in it need checking.",
+    "ta": "எதை வாங்க, விற்க அல்லது வைத்திருக்க வேண்டும் என்று ருகோ பரிந்துரைக்காது; விலைகளையும் கணிக்காது. யாராவது உங்களுக்கு முதலீடு தொடர்பான செய்தி அனுப்பியிருந்தால், அதை இங்கே ஒட்டவும்; அதிலுள்ள எந்தக் கூற்றுகளைச் சரிபார்க்க வேண்டும் என்று ருகோ காட்டும்."
+  }
+}

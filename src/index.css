@@ -1,0 +1,162 @@
+@import "@fontsource-variable/source-sans-3";
+@import "@fontsource-variable/source-serif-4";
+
+:root {
+  --paper: #F4EFE6;
+  --surface: #FBF8F2;
+  --sunken: #ECE6D9;
+  --ink: #1F2421;
+  --ink-muted: #565C54;
+  --line: #D6CDBB;
+  --line-strong: #B9AE98;
+  --green: #1F4D3A;
+  --green-dark: #163829;
+  --green-tint: #DDE8DF;
+  --amber-ink: #6F4A00;
+  --amber-bg: #F2E4BD;
+  --amber-line: #C9A85A;
+  --red-ink: #7E261C;
+  --red-bg: #F0D8D1;
+  --red-line: #B9695C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+:lang(ta) {
+  font-family: 'Noto Sans Tamil', 'Nirmala UI', 'Tamil Sangam MN', 'Latha', system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+:lang(ta) em,
+:lang(ta) i {
+  font-style: normal !important;
+}
+
+:lang(ta) * {
+  letter-spacing: normal !important;
+}
+
+h1, h2, h3 {
+  font-family: 'Source Serif 4', serif;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: clamp(1.9rem, 5.5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 3px solid var(--green) !important;
+  outline-offset: 2px !important;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(0.95);
+}
+
+/* Home Page Input Layout */
+.home-input-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .home-input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .home-left-col {
+    order: 1;
+  }
+
+  .home-right-col {
+    order: 2;
+  }
+}
+
+/* Result Page Layout */
+.result-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .result-grid {
+    display: grid;
+    grid-template-columns: 42% 55%;
+    gap: 3%;
+    align-items: start;
+  }
+
+  .result-left-col {
+    position: sticky;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+  }
+
+  .result-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 720px;
+  }
+}
+
+/* Skeleton Pulse */
+@media (prefers-reduced-motion: no-preference) {
+  .skeleton-pulse {
+    animation: skeleton-pulse 1.6s infinite ease-in-out;
+  }
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}

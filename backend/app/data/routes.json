@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sebi_check",
+    "label": { "en": "SEBI Check", "ta": "செபி செக்" },
+    "description": {
+      "en": "Enter the UPI ID or bank account and IFSC to see whether it belongs to a SEBI-registered intermediary.",
+      "ta": "UPI ஐடி அல்லது வங்கிக் கணக்கு மற்றும் IFSC-ஐ உள்ளிட்டு, அது செபியில் பதிவு செய்யப்பட்ட இடைத்தரகருக்குச் சொந்தமானதா என்று பாருங்கள்."
+    },
+    "url": "https://siportal.sebi.gov.in/intermediary/sebi-check",
+    "tel": null
+  },
+  {
+    "id": "sebi_intermediary_search",
+    "label": { "en": "SEBI intermediary search", "ta": "செபி இடைத்தரகர் தேடல்" },
+    "description": {
+      "en": "Look up whether a registration number or name appears in SEBI's records.",
+      "ta": "பதிவு எண் அல்லது பெயர் செபி பதிவுகளில் உள்ளதா என்று பாருங்கள்."
+    },
+    "url": "https://siportal.sebi.gov.in/intermediary/",
+    "tel": null
+  },
+  {
+    "id": "sebi_investor_awareness",
+    "label": { "en": "SEBI investor awareness", "ta": "செபி முதலீட்டாளர் விழிப்புணர்வு" },
+    "description": {
+      "en": "Official investor education and warnings about common frauds.",
+      "ta": "பொதுவான மோசடிகள் பற்றிய அதிகாரப்பூர்வ முதலீட்டாளர் கல்வி மற்றும் எச்சரிக்கைகள்."
+    },
+    "url": "https://investor.sebi.gov.in/",
+    "tel": null
+  },
+  {
+    "id": "ncrp_portal",
+    "label": { "en": "National Cyber Crime Reporting Portal", "ta": "தேசிய இணையக் குற்றப் புகார் தளம்" },
+    "description": {
+      "en": "Report suspicious numbers, links and accounts, or file a complaint about a cyber fraud.",
+      "ta": "சந்தேகத்திற்குரிய எண்கள், இணைப்புகள், கணக்குகளைப் புகாரளிக்கவும் அல்லது இணைய மோசடி குறித்துப் புகார் செய்யவும்."
+    },
+    "url": "https://cybercrime.gov.in/",
+    "tel": null
+  },
+  {
+    "id": "sanchar_saathi",
+    "label": { "en": "Sanchar Saathi", "ta": "சஞ்சார் சாத்தி" },
+    "description": {
+      "en": "Report suspected fraud communications received on your phone.",
+      "ta": "உங்கள் தொலைபேசியில் வந்த சந்தேகத்திற்குரிய தொடர்புகளைப் புகாரளிக்கவும்."
+    },
+    "url": "https://sancharsaathi.gov.in/",
+    "tel": null
+  },
+  {
+    "id": "helpline_1930",
+    "label": { "en": "Cyber fraud helpline 1930", "ta": "இணைய மோசடி உதவி எண் 1930" },
+    "description": {
+      "en": "If you have already sent money, call immediately.",
+      "ta": "நீங்கள் ஏற்கனவே பணம் அனுப்பியிருந்தால் உடனே அழைக்கவும்."
+    },
+    "url": null,
+    "tel": "tel:1930"
+  }
+]

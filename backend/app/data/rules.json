@@ -1,0 +1,135 @@
+[
+  {
+    "indicator_id": "assured_return",
+    "severity": "strong",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "guarantee(?:d|s)?(?:\\s+(?:returns?|profits?|income|gains?))?", "negatable": true },
+      { "re": "assured\\s+(?:returns?|profits?|income)", "negatable": true },
+      { "re": "fixed\\s+(?:returns?|profits?|income)", "negatable": true },
+      { "re": "(?:daily|weekly|per\\s+day|every\\s+day)\\s*(?:profit|return|income)?\\s*(?:of\\s*)?\\d+(?:\\.\\d+)?\\s*%", "negatable": false },
+      { "re": "\\d+(?:\\.\\d+)?\\s*%\\s*(?:daily|per\\s+day|every\\s+day|weekly)", "negatable": false },
+      { "re": "100\\s*%\\s*(?:profit|return|safe|sure)", "negatable": false },
+      { "re": "risk\\s*(?:illa|illai|free|nahi|nahin)", "negatable": false },
+      { "re": "double\\s+(?:your\\s+)?(?:money|paisa)", "negatable": false },
+      { "re": "pakka\\s+(?:profit|munafa|munaafa)", "negatable": false },
+      { "re": "உறுதியான\\s*(?:லாபம்|வருமானம்)", "negatable": false },
+      { "re": "உத்தரவாத(?:ம்|மான)", "negatable": false },
+      { "re": "ரிஸ்க்\\s*இல்லை", "negatable": false },
+      { "re": "தினமும்\\s*\\d+(?:\\.\\d+)?\\s*%", "negatable": false },
+      { "re": "நிச்சய\\s*லாபம்", "negatable": false },
+      { "re": "गारंटी", "negatable": false },
+      { "re": "पक्का\\s*मुनाफ़ा", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "specific_call",
+    "severity": "medium",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\b(?:buy|sell|accumulate|book\\s+profit)\\b[^\\n.]{0,40}?\\b(?:at|above|below|near|@|target|tgt)\\b[^\\n.]{0,20}?\\d", "negatable": false },
+      { "re": "\\b(?:target|tgt)\\s*(?:price)?\\s*[:=@-]?\\s*(?:rs\\.?|₹)?\\s*\\d", "negatable": false },
+      { "re": "\\bstop\\s*-?\\s*loss\\b", "negatable": false },
+      { "re": "\\bsure\\s*-?\\s*shot\\b", "negatable": false },
+      { "re": "\\b(?:intraday|f&o|options?|nifty|banknifty|bank\\s+nifty)\\s+(?:tips?|calls?|signals?)\\b", "negatable": false },
+      { "re": "\\b(?:jackpot|multibagger)\\s+(?:stock|share|call|tip)s?\\b", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "upfront_or_withdrawal_fee",
+    "severity": "strong",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "(?:fee|fees|tax|charge|charges|commission|gst|deposit)[^\\n.]{0,50}?(?:to|before|for)\\s+(?:withdraw|withdrawal|release|unlock|credit|get\\s+(?:your\\s+)?(?:money|profit))", "negatable": false },
+      { "re": "(?:withdraw|withdrawal|release|unlock)[^\\n.]{0,50}?(?:fee|fees|tax|charge|charges|commission|gst|deposit)", "negatable": false },
+      { "re": "(?:pay|send|deposit)[^\\n.]{0,40}?(?:to|before)\\s+(?:withdraw|release|unlock)", "negatable": false },
+      { "re": "\\b(?:joining|registration|membership|entry|activation|processing)\\s*(?:fee|fees|charge|charges)\\b", "negatable": false },
+      { "re": "(?:எடுக்க|திரும்பப்\\s*பெற)[^\\n.]{0,30}?(?:கட்டணம்|வரி)", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "private_group_access",
+    "severity": "medium",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\bvip\\s*(?:group|channel|tips|members?)\\b", "negatable": false },
+      { "re": "\\bfree\\s*(?:trading|stock|share\\s*market|market)?\\s*(?:course|classes?|training|webinar)\\b", "negatable": false },
+      { "re": "\\bjoin\\s+(?:our|my|the|this|us)?\\s*(?:whatsapp|telegram)?\\s*(?:vip\\s*)?(?:group|channel)\\b", "negatable": false },
+      { "re": "\\bgroup\\s+la\\s+join\\b", "negatable": false },
+      { "re": "\\b(?:institutional|big\\s*player|hni)\\s+(?:account|access|client|quota)\\b", "negatable": false },
+      { "re": "\\bipo\\s+(?:allotment|allot|guarantee)\\b", "negatable": false },
+      { "re": "\\bblock\\s*deal\\b", "negatable": false },
+      { "re": "குழுவில்\\s*(?:சேர|இணை)", "negatable": false },
+      { "re": "இலவச\\s*(?:பயிற்சி|வகுப்பு)", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "urgency",
+    "severity": "medium",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\bonly\\s+\\d+\\s+(?:slots?|seats?|spots?|members?|places?)\\b", "negatable": false },
+      { "re": "\\b(?:limited|last)\\s+(?:time|chance|slots?|seats?|spots?|offer)\\b", "negatable": false },
+      { "re": "\\b(?:today|tonight)\\s+only\\b", "negatable": false },
+      { "re": "\\b(?:offer|slots?|registration|deal)\\s+(?:expires?|ends?|closes?)\\b", "negatable": false },
+      { "re": "\\b(?:hurry|act\\s+now|don'?t\\s+miss|last\\s+date)\\b", "negatable": false },
+      { "re": "\\b(?:innaiku|inniku|indru)\\s+mattum\\b", "negatable": false },
+      { "re": "\\baaj\\s+hi\\b", "negatable": false },
+      { "re": "இன்று\\s*மட்டும்", "negatable": false },
+      { "re": "இன்றே", "negatable": false },
+      { "re": "கடைசி\\s*(?:வாய்ப்பு|நாள்)", "negatable": false },
+      { "re": "வரையறுக்கப்பட்ட\\s*இடங்கள்", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "secrecy_pressure",
+    "severity": "strong",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\b(?:don'?t|do\\s+not|never)\\s+(?:tell|share\\s+(?:this\\s+)?with|inform)\\s+(?:anyone|anybody|family|others|your\\s+family)\\b", "negatable": false },
+      { "re": "\\bkeep\\s+(?:this\\s+)?(?:a\\s+)?(?:secret|confidential|private)\\b", "negatable": false },
+      { "re": "\\b(?:yarukum|yaarukum|yarukkum|yaarukkum)\\s+solla\\s+(?:vendam|venam|vendaam)\\b", "negatable": false },
+      { "re": "\\bkisi\\s+ko\\s+(?:mat|nahi)\\s+(?:batana|bataana|batao)\\b", "negatable": false },
+      { "re": "யாரிடமும்\\s*(?:சொல்ல|கூற)\\s*(?:வேண்டாம்|கூடாது)", "negatable": false },
+      { "re": "ரகசியமாக\\s*(?:வை|வைக்க)", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "proof_screenshots",
+    "severity": "info",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\b(?:profit|payout|withdrawal)\\s*(?:screenshots?|proofs?)\\b", "negatable": false },
+      { "re": "\\btestimonials?\\b", "negatable": false },
+      { "re": "\\bour\\s+(?:members|clients|students)\\s+(?:earned|made|got)\\b", "negatable": false },
+      { "re": "\\b(?:see|check)\\s+(?:our\\s+)?(?:results|proofs?)\\b", "negatable": false },
+      { "re": "லாப\\s*(?:ஸ்கிரீன்ஷாட்|ஆதாரம்)", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "ai_instruction_text",
+    "severity": "medium",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\bignore\\s+(?:all\\s+|any\\s+)?(?:previous|prior|above|earlier)\\s+(?:instructions?|rules?|prompts?)\\b", "negatable": false },
+      { "re": "\\b(?:disregard|forget)\\s+(?:the\\s+)?(?:above|previous|instructions?)\\b", "negatable": false },
+      { "re": "\\b(?:you\\s+are|act\\s+as|pretend\\s+to\\s+be)\\s+(?:now\\s+)?(?:an?\\s+)?(?:ai|assistant|chatbot|chatgpt|gemini|claude|language\\s+model)\\b", "negatable": false },
+      { "re": "\\bsystem\\s+prompt\\b", "negatable": false },
+      { "re": "\\b(?:say|state|reply|respond|mark|label|rate|classify)\\b[^\\n.]{0,30}?\\b(?:safe|legit|legitimate|genuine|low\\s*risk|no\\s*risk|not\\s+a\\s+scam)\\b", "negatable": false },
+      { "re": "</?(?:system|assistant|user|instructions?)>", "negatable": false },
+      { "re": "\\b(?:reveal|print|show)\\b[^\\n.]{0,30}?\\b(?:prompt|api\\s*key|secret|instructions?)\\b", "negatable": false }
+    ]
+  },
+  {
+    "indicator_id": "sensitive_request",
+    "severity": "strong",
+    "max_matches": 3,
+    "patterns": [
+      { "re": "\\b(?:send|share|give|tell|forward|enter|provide|read\\s+out|type)\\b[^\\n.]{0,30}?\\b(?:otp|one[\\s-]*time\\s*(?:password|pin|code)|upi\\s*pin|mpin|cvv|cvc|atm\\s*pin|passcode|password)\\b", "negatable": true },
+      { "re": "\\b(?:anydesk|teamviewer|quicksupport|quick\\s*support|rustdesk|screen\\s*share|remote\\s*access|airdroid)\\b", "negatable": false },
+      { "re": "\\b(?:send|share|give|upload)\\b[^\\n.]{0,30}?\\b(?:aadhaar|aadhar|pan\\s*card|pan\\s*number|card\\s*number|net\\s*banking\\s*(?:id|password))\\b", "negatable": false },
+      { "re": "(?:ஓடிபி|ஓ\\.டி\\.பி|பின்\\s*நம்பர்)[^\\n.]{0,20}?(?:அனுப்ப|பகிர|சொல்)", "negatable": false },
+      { "re": "(?:அனுப்ப|பகிர|சொல்)[^\\n.]{0,20}?(?:ஓடிபி|ஓ\\.டி\\.பி)", "negatable": false }
+    ]
+  }
+]
