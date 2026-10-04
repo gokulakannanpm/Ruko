@@ -2,7 +2,7 @@ import { useState, useRef, useCallback } from "react";
 import type { AnalyzeRequest, AnalyzeResponse, ClientErrorCode, Lang, MaskReportItem, ImagePayload } from "./types";
 import { maskText } from "../lib/mask";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 export type AnalyzeStatus = "idle" | "analyzing_rules" | "rules_ready_ai_pending" | "done" | "error";
 
