@@ -1,32 +1,55 @@
-# React + TypeScript + Vite
+# 🛡️ Ruko
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+### Check the claim before you move the money.
 
-Currently, two official plugins are available:
+**Ruko** is an investor-resilience tool designed to help people pause, understand, and verify suspicious investment messages before making a financial decision.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> **Detection ≠ Protection.**
+>
+> Ruko doesn't simply flag a message. It breaks suspicious claims into understandable risk indicators, explains why they matter, and guides users toward official verification.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚨 The Problem
 
-## Expanding the Oxlint configuration
+Investment-related fraud and manipulation often arrive through familiar channels:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- WhatsApp and Telegram messages
+- SMS and social media
+- Fake registration claims
+- "Guaranteed" or unrealistic return promises
+- Upfront processing or membership fees
+- Private VIP investment groups
+- Urgency and limited-time pressure
+- Requests to send money before verification
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+The problem isn't always recognizing that something *looks suspicious*.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The harder question is:
+
+> **"What exactly should I verify before I send the money?"**
+
+That's where Ruko comes in.
+
+---
+
+## 💡 What Ruko Does
+
+Ruko takes an investment-related message and turns it into a structured verification journey.
+
+```text
+Message
+   ↓
+Normalize & Protect Sensitive Data
+   ↓
+Deterministic Risk Rules
+   ↓
+Risk Indicators
+   ↓
+Claim Ledger
+   ↓
+AI Explanation (Optional)
+   ↓
+Official Verification Routes
+   ↓
+Pause Before Payment
